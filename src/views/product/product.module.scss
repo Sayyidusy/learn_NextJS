@@ -1,0 +1,111 @@
+.product {
+    width: 100%;
+    &_title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    &_content{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+
+        &_skeleton{
+        width: 25%;
+        padding: 10px;
+        animation: skeleton 1.5s infinite;
+
+        &_image{
+            width: 100%;
+            height: 50px;
+            background-color: #ccc;
+        }
+        &_category{
+            margin-top: 10px;
+            width: 50%;
+            height: 15px;
+            background-color: #ccc;
+        }
+        &_name{
+            margin-top: 10px;
+            width: 70%;
+            height: 15px;
+            background-color: #ccc;
+        }
+        &_price{
+            margin-top: 10px;
+            width: 30%;
+            height: 12px;
+            background-color: #ccc;
+        }
+        &_btn{
+            margin-top: 10px;
+            width: 50%;
+            height: 15px;
+            background-color: #ccc;
+        }
+    }
+    }
+
+    &_item{
+        width: 200px;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    }
+    &_img{
+        width: 50x;
+        height: 200px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &_name{
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: gray;
+    }
+    &_price{
+        margin-top: 10px;
+        font-size: 1.2rem;
+        color: rgb(4, 4, 133);
+    }
+    &_btn{
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+            background-color: #5977ff;
+        }
+    }
+}
+
+
+@keyframes skeleton {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
