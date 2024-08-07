@@ -22,10 +22,10 @@ const Navbar = () => {
                 <div className="md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[100%] md:w-auto w-full flex items-center px-5">
                     <ul className="flex my- md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                         <li>
-                            <Link href={"/index.tsx"} className='hover:text-gray-700 text-[12px]'>Home</Link>
+                            <Link href={"/index"} className='hover:text-gray-700 text-[12px]'>Home</Link>
                         </li>
                         <li>
-                            <Link href={"/product"} className='hover:text-gray-700 text-[12px]'>Product</Link>
+                        <Link href={"/product"} className='hover:text-gray-700 text-[12px]'>Product</Link>
                         </li>
                         <li>
                             <Link href={"/about"} className='hover:text-gray-700 text-[12px]'>About</Link>
